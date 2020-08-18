@@ -1,3 +1,11 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+app_timestamp:
+  path: /timestamp
+  controller: App\Controller\TimestampController::saveTimestampToDb
+  methods: POST
+app_timestamp_get:
+  path: /timestamps
+  controller: App\Controller\TimestampController::getTimestamps
+  methods: GET
